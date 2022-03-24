@@ -50,7 +50,8 @@ class CheckUpdate: NSObject {
     
       // You should pay attention on the country that your app is located, in my case I put Portugal */pt/*
       
-        guard let identifier = self.getBundle(key: "CFBundleIdentifier"),
+        //guard let identifier = self.getBundle(key: "CFBundleIdentifier"),
+        guard let identifier = "com.outsystemsenterprise.biolab.destress",
               let url = URL(string: "http://itunes.apple.com/pt/lookup?bundleId=\(identifier)") else {
                 DispatchQueue.main.async {
                     completion(nil, VersionError.invalidBundleInfo)
