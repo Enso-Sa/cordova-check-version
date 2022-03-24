@@ -1,0 +1,28 @@
+{
+  "name": "cordova-plugin-check-version",
+  "version": "0.0.1-dev",
+  "description": "Cordova Check Version Plugin",
+  "cordova": {
+    "id": "cordova-plugin-check-version",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Enso-Sa/cordova-plugin-check-version"
+  },
+  "keywords": [
+    "cordova",
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "author": "Pedro Sá",
+  "license": "MIT"
+}

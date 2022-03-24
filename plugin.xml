@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin id="cordova-plugin-check-version" version="0.1.0" xmlns="http://apache.org/cordova/ns/plugins/1.0">
+  <name>CordovaCheckVersion</name>
+  <engines>
+    <engine name="cordova" version=">=3.0.0" />
+  </engines>
+  <js-module name="cordovaCheckVersion" src="www/cordovaCheckVersion.js">
+    <clobbers target="window.plugins.checkVersion" />
+  </js-module>
+  <platform name="ios">
+    <config-file parent="/*" target="config.xml">
+      <feature name="CordovaCheckVersion">
+        <param name="ios-package" value="CordovaCheckVersion" />
+      </feature>
+    </config-file>
+    <source-file src="src/ios/CordovaCheckVersion.swift" />
+    <dependency id="cordova-plugin-add-swift-support" url="https://github.com/akofman/cordova-plugin-add-swift-support" />
+  </platform>
+</plugin>
